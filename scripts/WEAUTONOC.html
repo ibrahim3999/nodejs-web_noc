@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEAUTONOC</title>
+    <link rel="shortcut icon" href="C:\Users\IbrhaimMjadly\OneDrive - Marathon\שולחן העבודה\logo web.png">
+    <script src="main.js"></script>
+    <style>
+         #background {
+            text-align: center;
+            background-image:url(http://images.ctfassets.net/plii0v5gbc4s/2Z8bmd2uAUpvzZmdEzeeOj/8652c8b7d5c782d8e0311520ea1a65a0/machine-learning-ai-b2b.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+            font-family: Sans-serif;
+        }
+        input{
+            background-color: rgb(252, 203, 113);
+            width: 25%;
+            height: 30px;
+            border-radius: 4px;
+        }
+        button {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+    </style>
+</head>
+<body id="background">
+    <header>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img style="width: 11.5%;"  src="C:\Users\IbrhaimMjadly\OneDrive - Marathon\שולחן העבודה\logo web.png"> 
+    </header>
+    <div>
+        <br><br><br>
+        <form oninput="res.value" >
+          <p>      
+          <label><b>Host</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input id="host"  type="text">
+        </p>
+          <p>     
+          <label><b>Host Group</b></label>
+          <input id="HostGroup" type="text">
+        </p>
+        <p>     
+            <label><b>problem</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input  id="problem"  type="text">
+        </p>
+        <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="button" onclick="getInputValues()"> <span>Done</span></button>
+        </div>
+        <div>
+        <p style="  display: inline;font-size: 28px;" id="output" name="res"> </p>
+    </div>
+    </form>
+      </div>   
+</body>
+</html>
