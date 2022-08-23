@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wecom Noc</title>
+    <link rel="shortcut icon" href="http://localhost:3000/logo">
+    <style>
+      .button:hover{
+        background-color:rgb(37, 14, 243);
+        color: aqua;        
+      }
+    
+      .button{
+        text-decoration: none;
+        appearance: none;
+        display: inline-block;
+        border: 2px solid black;
+        background-color:orangered;
+        border-radius: 0.5rem;
+      }
+      #background {
+            text-align: center;
+            background-image:url(https://www.securitymagazine.com/ext/resources/images/SEC0420-profile-Feat-slide1_900px.jpg?1606158983);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:100% 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #WEAUTONOC{
+          --green: orangered;
+          font-size: 15px;
+          padding: 0.7em 2.7em;
+          letter-spacing: 0.06em;
+          position: relative;
+          font-family: inherit;
+          border-radius: 0.6em;
+          overflow: hidden;
+          transition: all 0.3s;
+          cursor: pointer;
+          font-size: 2rem;
+          line-height: 1.4em;
+          border: 2px solid var(--green);
+          background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+          color: var(--green);
+          box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+
+     }
+     #WEAUTONOC:hover{
+      color:#13da7d;
+      box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+
+     }
+
+     .button-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        max-width: 1400px; 
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        
+     }
+     
+     .button-grid > a {
+      font-size: 1.5rem;
+      color: white;
+      padding: .5rem 2rem;
+      min-width: 3.2rem;
+      width: 15rem;
+      display: grid;
+      place-items: center;
+      justify-self: center;
+      font-family: Arial, Helvetica, sans-serif;
+     }
+     #logo{
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+  </head >
+  <body id="background">
+    <header> 
+    <img id="logo"   src="http://localhost:3000/logo"> 
+    </header>
+    <p style=" font-weight: bold; color: white;text-indent: 200px;text-align:center; font-size: 60px; ">
+      Welcome to Network Operations Center 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <div class="button-grid">
+      <a class="button" href="http://127.0.0.1:3000/Telephone_contact_page" > דף קשר טלפוני</a>
+      <a class="button" href="http://127.0.0.1:3000/work_management">נהלי עבודה </a>
+      <a class="button" href="http://127.0.0.1:3000/Investigations" >תחקירים </a>
+      <a class="button" href="http://127.0.0.1:3000/Proactive_work/">עבודה יזומה</a>
+      <a class="button" href="http://127.0.0.1:3000/martam/"> מרת"מ</a>
+      <a  class="button" href="http://127.0.0.1:3000/emergency">מוקד 7100 בחירום</a>
+      <a  class="button" href="http://127.0.0.1:3000/ManagementNoc"> ניהול NOC</a>
+      <a class="button" href="http://127.0.0.1:3000/NetWork_monitoring">ניטור רשת</a>
+      <a class="button" href="http://127.0.0.1:3000/Scams">מערכות הונאות</a>
+    </div>
+    <div><a id="WEAUTONOC" href="http://127.0.0.1:3000/WEAUTONOC">WEAUTONOC</a></div>
+</html>
