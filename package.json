@@ -1,0 +1,53 @@
+{
+  
+  "name": "web",
+  
+  "version": "1.0.0",
+  
+  "description": "",
+  
+  "main": "app.js",
+  
+  "scripts": {
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1",
+  
+    
+  "start": "node app.js",
+  
+    
+  "dev": "nodemon app.js"
+  
+  },
+  
+  "author": "",
+  
+  "license": "ISC",
+  
+  "dependencies": {
+  
+    
+  "express": "^4.17.1",
+  
+    
+  "express-pdf": "^1.2.2",
+  
+    
+  "imaginary": "^0.1.16",
+  
+    
+  "nodemon": "^2.0.19"
+  
+  },
+  
+  "devDependencies": {
+  
+    
+  "stylelint": "^14.10.0",
+  
+    
+  "stylelint-config-standard": "^27.0.0"
+  
+  }
+}
