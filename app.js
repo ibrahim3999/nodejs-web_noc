@@ -93,9 +93,10 @@ app.use('/NetWork_monitoring/Overlap_case_for_representative_NOC_frauds', (req, 
     res.pdf(path.resolve(__dirname + '/pdfPages/Overlap case for representative NOC frauds.pdf' ));
     });
     //root/Investigations/Learning_procedure_template_from_a_significant_event_WECOM
-app.use('/Investigations/Learning procedure template', (req, res) => {
+app.use('/Investigations/Learning_procedure_template', (req, res) => {
     res.pdf(path.resolve(__dirname + '/pdfPages/Learning procedure template.pdf' ));
     });   
+    
 app.use('/', router);
 /*
 app.set("view engine","ejs");
