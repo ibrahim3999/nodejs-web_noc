@@ -52,10 +52,10 @@ app.get('/Telephone_contact_page', (req, res) => {
 });
 // root/1/2
 app.use(pdf);
-//root/work_management/Employee_information_security_procedure
-app.use('/work_management/Employee_information_security_procedure', (req, res) => {
-    res.pdf(path.resolve(__dirname + '/pdfPages/Employee information security procedure.pdf' ));
-    });
+//root/work_management/Version_1_Credit_card_fault_check_proced
+app.use('/work_management/Version_1_Credit_card_fault_check_proced',(req,res)=>{
+res.pdf(path.resolve(__dirname + '/pdfPages/Version 1 Credit card fault check proced.pdf'));
+});
 //root/martam/Fraudulent_NOC_activity
 app.use('/martam/Fraudulent_NOC_activity', (req, res) => {
         res.pdf(path.resolve(__dirname + '/pdfPages/Fraudulent NOC activity.pdf' ));
