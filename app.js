@@ -52,6 +52,10 @@ app.get('/Telephone_contact_page', (req, res) => {
 });
 // root/1/2
 app.use(pdf);
+//root/Investigations/Learning_procedure_template_from_a_significant_event_WECOM
+app.get('/Investigations/Learning_procedure_template_from_a_significant_event_WECOM', (req, res) => {
+    res.sendFile( __dirname + '/pdfPages/Learning procedure template from a significant event_WECOM.pdf' );
+});
 //root/work_management/Employee_information_security_procedure
 app.use('/work_management/Employee_information_security_procedure', (req, res) => {
     res.pdf(path.resolve(__dirname + '/pdfPages/Employee information security procedure.pdf' ));
