@@ -56,6 +56,18 @@ app.use(pdf);
 app.use('/work_management/Version_1_Credit_card_fault_check_proced',(req,res)=>{
 res.pdf(path.resolve(__dirname + '/pdfPages/Version 1 Credit card fault check proced.pdf'));
 });
+//root/work_management/Rep Scams Presentation v12022
+app.use('/work_management/Rep_Scams_Presentation_v12022',(req,res)=>{
+    res.pdf(path.resolve(__dirname + '/pdfPages/Rep Scams Presentation v12022.pdf'));
+});
+//root/work_management/Initiative work procedure V1
+app.use('/work_management/Initiative_work_procedure_V1',(req,res)=>{
+    res.pdf(path.resolve(__dirname + '/pdfPages/Initiative work procedure V1.pdf'));
+});
+//root/work_management/System_failure_procedure
+app.use('/work_management/System_failure_procedure',(req,res)=>{
+    res.pdf(path.resolve(__dirname + '/pdfPages/System failure procedure.pdf'));
+});   
 //root/martam/Fraudulent_NOC_activity
 app.use('/martam/Fraudulent_NOC_activity', (req, res) => {
         res.pdf(path.resolve(__dirname + '/pdfPages/Fraudulent NOC activity.pdf' ));
@@ -81,22 +93,14 @@ app.use('/Scams/Fraud_prevention_presentation_for_new_representatives', (req, re
     res.pdf(path.resolve(__dirname + '/pdfPages/Fraud_prevention_presentation_for_new_representatives.pdf' ));
      }); 
 
-    //root/Network_monitoringA guide to the NOC
-app.use('/NetWork_monitoring/A_guide_to_the_NOC', (req, res) => {
-    res.pdf(path.resolve(__dirname + '/pdfPages/A guide to the NOC.pdf' ));
+    //root/Network_monitoring/grafana
+app.use('/NetWork_monitoring/GRAFANA', (req, res) => {
+    res.pdf(path.resolve(__dirname + '/pdfPages/GRAFANA.pdf' ));
     });
-app.use('/NetWork_monitoring/New_employee_case_NOC_frauds', (req, res) => {
-    res.pdf(path.resolve(__dirname + '/pdfPages/New employee case-NOC frauds.pdf' ));
+app.use('/NetWork_monitoring/ZABBIX', (req, res) => {
+    res.pdf(path.resolve(__dirname + '/pdfPages/ZABBIX.pdf' ));
     });     
-    //root/Network_monitoring/Overlap case for representative NOC frauds
-app.use('/NetWork_monitoring/Overlap_case_for_representative_NOC_frauds', (req, res) => {
-    res.pdf(path.resolve(__dirname + '/pdfPages/Overlap case for representative NOC frauds.pdf' ));
-    });
-    //root/Investigations/Learning_procedure_template_from_a_significant_event_WECOM
-app.use('/Investigations/Learning_procedure_template', (req, res) => {
-    res.pdf(path.resolve(__dirname + '/pdfPages/Learning procedure template.pdf' ));
-    });   
-    
+
 app.use('/', router);
 /*
 app.set("view engine","ejs");
