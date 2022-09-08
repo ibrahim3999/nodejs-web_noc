@@ -52,10 +52,6 @@ app.get('/Telephone_contact_page', (req, res) => {
 });
 // root/1/2
 app.use(pdf);
-//root/Investigations/Learning_procedure_template_from_a_significant_event_WECOM
-app.get('/Investigations/Learning_procedure_template_from_a_significant_event_WECOM', (req, res) => {
-    res.sendFile( __dirname + '/pdfPages/Learning procedure template from a significant event_WECOM.pdf' );
-});
 //root/work_management/Employee_information_security_procedure
 app.use('/work_management/Employee_information_security_procedure', (req, res) => {
     res.pdf(path.resolve(__dirname + '/pdfPages/Employee information security procedure.pdf' ));
@@ -89,15 +85,17 @@ app.use('/Scams/Fraud_prevention_presentation_for_new_representatives', (req, re
 app.use('/NetWork_monitoring/A_guide_to_the_NOC', (req, res) => {
     res.pdf(path.resolve(__dirname + '/pdfPages/A guide to the NOC.pdf' ));
     });
-    
+app.use('/NetWork_monitoring/New_employee_case_NOC_frauds', (req, res) => {
+    res.pdf(path.resolve(__dirname + '/pdfPages/New employee case-NOC frauds.pdf' ));
+    });     
     //root/Network_monitoring/Overlap case for representative NOC frauds
 app.use('/NetWork_monitoring/Overlap_case_for_representative_NOC_frauds', (req, res) => {
     res.pdf(path.resolve(__dirname + '/pdfPages/Overlap case for representative NOC frauds.pdf' ));
     });
-    
-app.use('/NetWork_monitoring/New_employee_case_NOC_frauds', (req, res) => {
-    res.pdf(path.resolve(__dirname + '/pdfPages/New employee case-NOC frauds.pdf' ));
-    });    
+    //root/Investigations/Learning_procedure_template_from_a_significant_event_WECOM
+app.use('/Investigations/Learning procedure template', (req, res) => {
+    res.pdf(path.resolve(__dirname + '/pdfPages/Learning procedure template.pdf' ));
+    });   
 app.use('/', router);
 /*
 app.set("view engine","ejs");
@@ -110,7 +108,7 @@ app.post("/upload",(req,res)=>{
 });
 */
 // Port Number
-const port = process.env.port ||3000;
+const port = process.env.port ||5000;
 console.log('Server started at http://localhost:' + port);
 app.listen(port)
   
