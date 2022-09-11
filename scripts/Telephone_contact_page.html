@@ -22,32 +22,35 @@
         
         }
         
-        .container {
+        .container1 {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 75%;
+            left: 75%;
+            transform: translate(-50%, -60%);
         }
-        
+        .container2 {
+            position: absolute;
+            top: 94%;
+            right: 75%;
+            transform: translate(-50%, -60%);
+        } 
         table {
             width: 800px;
             border-collapse: collapse;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
-        
-        th,
         td {
             padding: 15px;
             background-color: rgba(255,255,255);
             color: #131313;
             font-family: 'Heebo', sans-serif;
-        
         }
-        
         th {
-            text-align: center;
-            color: #FFFFFF
+            padding: 15px;
+            background-color: rgba(255,255,255);
+            color: #131313;
+            font-family: 'Heebo', sans-serif;    
         }
         h1{
             color: #131313;
@@ -60,13 +63,12 @@
         }
         #col{
             background-color:orangered ;
+            color: white;
         }
         #a
         {
-            background-color: white;
-        }
-        #container{
-            
+            text-align: center;
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -74,7 +76,7 @@
     <header>
         <img src="http://127.0.0.1:5000/logo" alt="">
     </header>
-    <div class="container">
+    <div class="container1">
         <h1 >אלפון מרת"מ</h1>
         <table>
             <thead>
@@ -166,23 +168,20 @@
                     <td>מרת"ם - מרכז תמיכה  בין מפעילים - NPG Support </td>
                     <td>***</td>
                 </tr>
-
             </tbody>
         </table>
-    </div>
-    <!--
+
+   <div class="container2">
     <h1>עבודות יזומות </h1>
-    <div class="container">
-        
        <table>
         <tbody>
-            <tr>
-                <td>מייל</td>
-                <td>טלפון</td>
-                <td>מפעיל</td>
-                <td>תפקיד</td>
-                <td>קישור למערכת</td>
-                <td>שם</td>
+            <tr id="a">
+                <td id="col">מייל</td>
+                <td id="col">טלפון</td>
+                <td id="col">מפעיל</td>
+                <td id="col">תפקיד</td>
+                <td id="col">קישור למערכת</td>
+                <td id="col">שם</td>
             </tr>
             <tr>
                 <td>roei.lazmi1@partner.co.il </td>
@@ -333,6 +332,5 @@
        </table>
 </table>
     </div>
-    -->
 </body>
 </html>
