@@ -11,7 +11,7 @@ const pdf=require('express-pdf');
 
 //  '/ allpages conect with class button'
 app.get('/logo', (req, res) => {
-    res.sendFile( __dirname + '/scripts/pic/BTL_124256_logo_noc_c.png')
+    res.sendFile(  __dirname + '/scripts/pic/BTL_124256_logo_noc_c.png')
 });
 //root page 
 app.get('/', (req, res) => {
@@ -100,6 +100,9 @@ app.use('/NetWork_monitoring/GRAFANA', (req, res) => {
 app.use('/NetWork_monitoring/ZABBIX', (req, res) => {
     res.pdf(path.resolve(__dirname + '/pdfPages/ZABBIX.pdf' ));
     });     
+app.use('/ManagementNoc/Overlap_case_for_representative_NOC_frauds', (req, res) => {
+    res.pdf(path.resolve(__dirname + '/pdfPages/Overlap case for representative NOC frauds.pdf' ));
+    });
 
 app.use('/', router);
 /*
