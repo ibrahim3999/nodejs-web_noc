@@ -15,7 +15,7 @@ app.get('/logo', (req, res) => {
 });
 //background index.
 app.get('/backgroundIndex', (req, res) => {
-    res.sendFile(  __dirname + '/scripts/pic/8245.png')
+    res.sendFile(  __dirname + '/scripts/pic/background.jpg')
 });
 //root page 
 app.get('/', (req, res) => {
