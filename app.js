@@ -13,6 +13,10 @@ const pdf=require('express-pdf');
 app.get('/logo', (req, res) => {
     res.sendFile(  __dirname + '/scripts/pic/BTL_124256_logo_noc_c.png')
 });
+//background index.
+app.get('/backgroundIndex', (req, res) => {
+    res.sendFile(  __dirname + '/scripts/pic/8245.png')
+});
 //root page 
 app.get('/', (req, res) => {
     res.sendFile( __dirname + '/scripts/index.html' );
